@@ -1,3 +1,8 @@
+# Read Me First
+The following was discovered as part of building this project:
+
+* The original package name 'com.champs.spring-security' is invalid and this project uses 'com.champs.spring_security' instead.
+
 # Getting Started
 
 ### Reference Documentation
