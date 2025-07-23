@@ -39,8 +39,8 @@ public class WebSecurityConfig {
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/user/**").hasRole("USER")
                         .anyRequest().authenticated() // Qualquer outra requisição deve ser autenticada
-                ).formLogin(Customizer.withDefaults()) // Usando o login padrão do Spring Security
-//                ).httpBasic(Customizer.withDefaults())
+//                ).formLogin(Customizer.withDefaults()) // Usando o login padrão do Spring Security
+                ).httpBasic(Customizer.withDefaults())
                 .build();
     }
 

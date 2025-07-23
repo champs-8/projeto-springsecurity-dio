@@ -11,13 +11,13 @@ public class WelcomeController {
         return "Welcome to my Springboot controller";
     }
     @GetMapping("/users")
-    @PreAuthorize("hasAnyRole('ADMINS', 'USERS')")
+    @PreAuthorize("hasAnyRole('ADMIN', 'USER')")
     public String users(){
         return "Authorized user";
     }
 
     @GetMapping("/managers")
-    @PreAuthorize("hasAnyRole('ADMINS')")
+    @PreAuthorize("hasAnyRole('ADMIN')")
     public String managers(){
         return "Authorized manager";
     }
